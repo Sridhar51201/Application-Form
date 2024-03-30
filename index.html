@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Application Form - 47359 SWE</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <img src="./logo.png" id="logo" />
+      <span id="mode">
+        <img src="./light.png" id="mode-img" />
+      </span>
+    </header>
+
+    <div id="body">
+      <div id="description">
+        <span id="description-title">Job Description</span>
+        <table>
+          <tr>
+            <td>Job ID</td>
+            <td>47359</td>
+          </tr>
+          <tr>
+            <td>Experience</td>
+            <td>Fresher</td>
+          </tr>
+          <tr>
+            <td>Location</td>
+            <td>Bangalore, India</td>
+          </tr>
+          <tr>
+            <td>Job Type</td>
+            <td>Full time</td>
+          </tr>
+          <tr>
+            <td>Role</td>
+            <td>Software Engineer</td>
+          </tr>
+        </table>
+      </div>
+
+      <form id="form">
+        <span id="title">Job Application Form</span>
+
+        <div class="field">
+          <span class="label">Name</span>
+          <input
+            type="text"
+            id="name"
+            class="form-field"
+            placeholder="Enter your name"
+            required
+          />
+          <span class="warn" id="w-name"></span>
+        </div>
+
+        <div class="field">
+          <span class="label">E-mail</span>
+          <input
+            type="email"
+            id="email"
+            class="form-field"
+            placeholder="Enter your e-mail"
+            required
+          /><span class="warn" id="w-email"></span>
+        </div>
+
+        <div class="field">
+          <span class="label">Phone</span>
+          <input
+            type="text"
+            id="phone"
+            class="form-field"
+            placeholder="Enter your phone number"
+            required
+          /><span class="warn" id="w-phone"></span>
+        </div>
+
+        <div class="address-field">
+          <span class="label">Address</span>
+          <textarea
+            type="text"
+            id="address"
+            placeholder="Enter your address"
+            required
+          ></textarea
+          ><span class="warn" id="w-address"></span>
+        </div>
+
+        <div class="field">
+          <span class="label">Resume</span>
+          <div id="upload">Upload</div>
+          <span id="file-name" class="warn">No file chosen</span>
+          <input type="file" id="file" accept=".pdf,.doc,.docx" required />
+        </div>
+
+        <div class="row">
+          <input type="button" value="Apply" id="submit-btn" />
+        </div>
+      </form>
+    </div>
+
+    <footer id="footer">
+      <div class="detail">
+        <img src="./query.png" class="detail-img" /><span class="detail-value"
+          >contact@neuralgo.ai</span
+        >
+      </div>
+      <div class="detail">
+        <img src="./partner.png" class="detail-img" /><span class="detail-value"
+          >partners@neuralgo.ai</span
+        >
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+  <script src="./index.js" type="application/javascript"></script>
+</html>
